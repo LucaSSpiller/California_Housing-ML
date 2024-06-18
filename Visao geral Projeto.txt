@@ -1,0 +1,56 @@
+Passos do Projeto
+
+    Coletar Dados
+    Pré-processar Dados
+    Exploração e Visualização de Dados
+    Treinar Modelos de Machine Learning
+    Avaliar Modelos
+    Aprimorar o Modelo
+    Implementar o Modelo em Produção (opcional)
+
+1. Coletar Dados
+
+Vamos utilizar um conjunto de dados conhecido e amplamente utilizado: o conjunto de dados de preços de casas de Boston (Boston Housing Dataset). Este conjunto de dados está disponível no Scikit-Learn, uma das principais bibliotecas de Machine Learning em Python.
+2. Pré-processar Dados
+
+Nesta etapa, vamos carregar os dados, tratar valores faltantes, normalizar ou padronizar os dados, e dividir os dados em conjuntos de treinamento e teste.
+3. Exploração e Visualização de Dados
+
+Vamos explorar os dados para entender suas características principais. Isso inclui gerar estatísticas descritivas e criar visualizações para identificar padrões.
+4. Treinar Modelos de Machine Learning
+
+Vamos treinar alguns modelos de regressão, como a Regressão Linear, Regressão Ridge, e Árvore de Decisão, para prever os preços das casas.
+5. Avaliar Modelos
+
+Vamos avaliar o desempenho dos modelos usando métricas como Mean Squared Error (MSE) e R-squared.
+6. Aprimorar o Modelo
+
+Podemos tentar melhorar o desempenho do modelo utilizando técnicas como ajuste de hiperparâmetros e validação cruzada.
+7. Implementar o Modelo em Produção (opcional)
+
+Se quiser, podemos finalizar o projeto implementando o modelo em um ambiente de produção, como um serviço web.
+
+Vamos começar pela primeira etapa: coletar e carregar os dados.
+Coletando e Carregando os Dados
+
+Primeiro, vamos carregar o conjunto de dados de preços de casas de Boston.
+
+python
+
+import pandas as pd
+from sklearn.datasets import load_boston
+
+# Carregar os dados
+boston = load_boston()
+
+# Criar um DataFrame com os dados
+data = pd.DataFrame(boston.data, columns=boston.feature_names)
+data['PRICE'] = boston.target
+
+# Exibir as primeiras linhas do DataFrame
+data.head()
+
+Isso criará um DataFrame do pandas com os dados. Vamos executar esse código juntos para ver os dados.
+Próximos Passos
+
+Depois de carregar os dados, vamos explorar e pré-processar os dados antes de treinar nosso primeiro modelo de Machine Learning.
