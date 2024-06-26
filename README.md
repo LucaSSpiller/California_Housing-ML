@@ -16,7 +16,7 @@
 
 Para instalar as dependências necessárias, você pode usar o pip:
 
-```
+```python
 pip install pandas scikit-learn matplotlib seaborn joblib
 ```
 
@@ -78,13 +78,13 @@ pip install pandas scikit-learn matplotlib seaborn joblib
 ### Passo a Passo da Implementação
 
 1. Instalar o Flask:
-```
+```python
 pip install flask
 ```
 2. Criar o Arquivo app.py;
 3. Criar o Arquivo HTML index.html na pasta templates;
 4. Executar o Serviço Web:
-```
+```python
 python web/app.py
 ```
 Isso iniciará o servidor local do Flask. Entre em http://localhost:5000/ para acessar a interface do usuário e fazer previsões de preços de casas.
